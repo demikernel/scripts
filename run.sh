@@ -13,4 +13,4 @@ SSH_OPTIONS=""
 
 set -e
 
-ssh $SSH_OPTIONS $REMOTE_HOST "bash -l -c 'sudo $RUNCMD 2>&1 | tee \$HOSTNAME'"
+ssh $SSH_OPTIONS $REMOTE_HOST "bash -l -c 'sudo -E $RUNCMD 2>&1 | tee \$HOSTNAME'"
