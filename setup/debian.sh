@@ -23,4 +23,4 @@ PIP_PACKAGES="pyelftools ninja meson"
 apt-get update
 apt-get -y install $APT_PACKAGES
 
-pip3 install $PIP_PACKAGES
+pip3 install pyelftools ninja==1.10.0 meson==0.58.1
