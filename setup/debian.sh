@@ -5,20 +5,7 @@
 
 set -e
 
-APT_PACKAGES="\
-	build-essential\
-	clang \
-	libnuma-dev \
-	pkg-config \
-	python3 \
-	python3-pip\
-	libboost-dev \
-	libyaml-cpp-dev \
-	libboost-chrono-dev \
-	libboost-program-options-dev \
-	libboost-system-dev"
-
-PIP_PACKAGES="pyelftools ninja meson"
+APT_PACKAGES="build-essential clang libnuma-dev pkg-config python3 python3-pip"
 
 apt-get update
 apt-get -y install $APT_PACKAGES
