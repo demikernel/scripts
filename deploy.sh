@@ -49,4 +49,4 @@ fi
 
 ssh $SSH_OPTIONS $REMOTE_HOST "bash -l -c 'mkdir -p $REMOTE_PATH'"
 rsync $RSYNC_OPTIONS . "$REMOTE_HOST":"$REMOTE_PATH"
-ssh $SSH_OPTIONS $REMOTE_HOST "bash -l -c 'cd $REMOTE_PATH && make $MAKE_FLAGS $MAKE_TARGET'"
+ssh $SSH_OPTIONS $REMOTE_HOST "bash -l -c 'cd $REMOTE_PATH && make $MAKE_FLAGS $MAKE_TARGET 2>&1 | tee ~/\$HOSTNAME'"
