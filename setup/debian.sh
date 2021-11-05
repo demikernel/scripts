@@ -5,9 +5,9 @@
 
 set -e
 
-APT_PACKAGES="build-essential clang libnuma-dev pkg-config python3 python3-pip"
+APT_PACKAGES="build-essential clang libnuma-dev pkg-config python3 python3-pip meson"
 
 apt-get update
 apt-get -y install $APT_PACKAGES
 
-pip3 install pyelftools ninja==1.10.0 meson==0.58.1
+pip3 install pyelftools
