@@ -6,16 +6,16 @@
 # Fail on error.
 set -e
 
-# Switch to workind directory.
+# Switch to working directory.
 pushd $PWD
-mkdir $HOME/tmp
-cd $HOME/tmp
+mkdir -p $HOME/tmp/dpdk
+cd $HOME/tmp/dpdk
 
 # Download sources.
 wget https://fast.dpdk.org/rel/dpdk-21.02.tar.xz
 tar -xvf dpdk-21.02.tar.xz
 cd dpdk-21.02
-mkdir build
+mkdir -p build
 
 # Build and install
 meson --prefix=$HOME build
@@ -24,4 +24,4 @@ ninja -C build install
 
 # Cleanup.
 popd
-rm -rf $HOME/tmp
+rm -rf $HOME/tmp/dpdk
