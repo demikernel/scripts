@@ -17,6 +17,8 @@ server:
     port: PPPP
 catnip:
   my_ipv4_addr: ZZ.ZZ.ZZ.ZZ
+  my_link_addr: "ff:ff:ff:ff:ff:ff"
+  my_interface_name: "abcde"
   arp_disable: true
 dpdk:
   eal_init: ["-c", "0xff", "-n", "4", "-w", "WW:WW.W","--proc-type=auto", "--vdev=net_vdev_netvsc0,iface=eth1"]
