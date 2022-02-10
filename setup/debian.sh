@@ -5,7 +5,7 @@
 
 set -e
 
-APT_PACKAGES="librdmacm-dev llibmnl-dev build-essential clang libnuma-dev pkg-config python3 python3-pip meson"
+APT_PACKAGES="librdmacm-dev libmnl-dev build-essential clang libnuma-dev pkg-config python3 python3-pip meson"
 
 
 
