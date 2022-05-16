@@ -16,7 +16,7 @@ cd $HOME/tmp
 # Get sources
 git clone https://github.com/axboe/liburing.git
 cd liburing
-git chechout $LIBURING_VERSION
+git checkout $LIBURING_VERSION
 
 # Build and install.
 ./configure --prefix=$HOME
